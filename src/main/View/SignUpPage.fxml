@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="665.0" style="-fx-background-color: white; -fx-border-color: green; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignUpController">
+    <children>
+        <Label alignment="CENTER" layoutX="224.0" layoutY="14.0" prefHeight="42.0" prefWidth="218.0" style="-fx-background-color: white;" text="Signing Up" textFill="GREEN">
+            <font>
+                <Font name="Trebuchet MS" size="36.0" />
+            </font>
+        </Label>
+        <TextField fx:id="TXTName" layoutX="147.0" layoutY="124.0" promptText="Name :" />
+        <TextField fx:id="TXTLastName" layoutX="485.0" layoutY="123.0" prefHeight="19.0" prefWidth="149.0" promptText="LastName :" />
+        <TextField fx:id="TXTUsername" layoutX="147.0" layoutY="194.0" promptText="Username :" />
+        <TextField fx:id="TXTcode" layoutX="359.0" layoutY="393.0" prefHeight="25.0" prefWidth="97.0" promptText="Exapmle : 1234" />
+        <TextField fx:id="TXTPassword" layoutX="485.0" layoutY="194.0" promptText="Password :" />
+        <TextField fx:id="TXTEmail" layoutX="292.0" layoutY="261.0" prefHeight="25.0" prefWidth="208.0" promptText="E-mail :" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="119.0" prefHeight="32.0" prefWidth="97.0" text="Name" textAlignment="CENTER" textFill="GREEN">
+            <font>
+                <Font name="Trebuchet MS" size="20.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="351.0" layoutY="193.0" prefHeight="25.0" prefWidth="97.0" text="Password" textAlignment="CENTER" textFill="GREEN">
+            <font>
+                <Font name="Trebuchet MS" size="20.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="196.0" layoutY="257.0" prefHeight="25.0" prefWidth="74.0" text="E-mail" textAlignment="CENTER" textFill="GREEN">
+            <font>
+                <Font name="Trebuchet MS" size="20.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="389.0" prefHeight="32.0" prefWidth="132.0" text="4-digit code" textFill="GREEN">
+            <font>
+                <Font name="Trebuchet MS" size="20.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="351.0" layoutY="120.0" prefHeight="32.0" prefWidth="97.0" text="LastName" textAlignment="CENTER" textFill="GREEN">
+            <font>
+                <Font name="Trebuchet MS" size="20.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="191.0" prefHeight="32.0" prefWidth="97.0" text="Username" textAlignment="CENTER" textFill="GREEN">
+            <font>
+                <Font name="Trebuchet MS" size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="BTNregester" alignment="CENTER" contentDisplay="CENTER" layoutX="266.0" layoutY="440.0" mnemonicParsing="false" onAction="#signupBTNHandler" prefHeight="41.0" prefWidth="141.0" text="Sign Up" textAlignment="CENTER" textFill="GREEN">
+            <font>
+                <Font name="Trebuchet MS" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="BTNcheck" alignment="CENTER" contentDisplay="CENTER" layoutX="227.0" layoutY="327.0" mnemonicParsing="false" onAction="#send4DigitNumberHandler" text="Send the 4-digit code" textAlignment="CENTER" textFill="GREEN">
+            <font>
+                <Font name="Trebuchet MS" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnback" alignment="CENTER" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backBTNHandler" prefHeight="25.0" prefWidth="62.0" text="Back" textFill="#110505">
+            <font>
+                <Font name="Trebuchet MS" size="15.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="221.0" layoutY="56.0" prefHeight="32.0" prefWidth="208.0" text="Enter your information to sign up!" textAlignment="CENTER" textFill="GREEN" />
+    </children>
+</AnchorPane>

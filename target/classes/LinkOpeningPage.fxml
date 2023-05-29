@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="287.0" style="-fx-background-color: white; -fx-border-width: 10; -fx-border-color: green;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LinkOpeningController">
+    <children>
+        <Label alignment="CENTER" layoutX="17.0" layoutY="44.0" prefHeight="68.0" prefWidth="281.0" text="Click on the link bellow" textFill="GREEN">
+            <font>
+                <Font name="Trebuchet MS" size="16.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="75.0" layoutY="309.0" prefHeight="83.0" prefWidth="169.0" style="-fx-border-color: green; -fx-border-width: 5;" textFill="#74287e">
+            <font>
+                <Font name="Century Schoolbook Bold Italic" size="15.0" />
+            </font>
+        </Label>
+        <Hyperlink fx:id="hyperlink" alignment="CENTER" layoutX="84.0" layoutY="320.0" onAction="#hyperlinkHandler" prefHeight="61.0" prefWidth="151.0" textFill="GREEN">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Hyperlink>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="93.0" prefHeight="25.0" prefWidth="151.0" text="To join the group" textAlignment="CENTER" textFill="GREEN">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="158.0" layoutY="130.0" prefHeight="52.0" prefWidth="52.0" text=" |&#10;\/&#10;" />
+
+    </children>
+</AnchorPane>
